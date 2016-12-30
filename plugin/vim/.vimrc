@@ -35,7 +35,8 @@ map <Down> <Nop>
 set hlsearch
 set incsearch
 
-
+let mapleader=','
+nnoremap <leader>w :%s/\s\+$//<cr>:let @/=''<CR>
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -53,6 +54,8 @@ Bundle 'terryma/vim-multiple-cursors'
 Bundle 'tomasr/molokai'
 
 Bundle 'dkprice/vim-easygrep'
+
+Bundle 'ShowTrailingWhitespace'
 
 Bundle 'scrooloose/nerdcommenter'
 
