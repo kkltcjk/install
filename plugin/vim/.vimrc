@@ -49,6 +49,17 @@ Plugin 'VundleVim/Vundle.vim'
 
 Bundle 'scrooloose/syntastic'
 
+" DoxygenToolkit
+Bundle 'vim-scripts/DoxygenToolkit'
+let s:licenseTag = "############################################################################\<enter>"
+let s:licenseTag = s:licenseTag . "Copyright (c) 2017 Huawei Technologies Co.,Ltd and others.\<enter>\<enter>"
+let s:licenseTag = s:licenseTag . "All rights reserved. This program and the accompanying materials\<enter>"
+let s:licenseTag = s:licenseTag . "are made available under the terms of the Apache License, Version 2.0\<enter>"
+let s:licenseTag = s:licenseTag . "which accompanies this distribution, and is available at\<enter>"
+let s:licenseTag = s:licenseTag . "http://www.apache.org/licenses/LICENSE-2.0\<enter>"
+let s:licenseTag = s:licenseTag . "############################################################################"
+let g:DoxygenToolkit_licenseTag = s:licenseTag
+
 Bundle 'terryma/vim-multiple-cursors'
 
 Bundle 'tomasr/molokai'
@@ -69,20 +80,6 @@ nmap <F8> :TagbarToggle<CR>
 
 Bundle 'kien/ctrlp.vim'
 
-Plugin 'vim-airline/vim-airline'
-set laststatus=2
-
-Plugin 'vim-airline/vim-airline-themes'
-set encoding=utf-8
-set langmenu=zh_CN.UTF-8
-let g:airline_theme="simple"
-let g:airline_powerline_fonts = 1 
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tmuxline#enabled = 0
-
-Bundle 'edkolev/tmuxline.vim'
-let g:tmuxline_theme = 'jellybeans'
-
 call vundle#end()            " required
 
 " Pathogen load
@@ -92,5 +89,3 @@ let g:pymode_rope=0
 let g:pymode_rope_completion=1
 
 filetype plugin indent on    " required
-
-let mapleader=','

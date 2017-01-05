@@ -88,4 +88,6 @@ bindkey -v
 bindkey -M viins 'jj' vi-cmd-mode
 bindkey '^R' history-incremental-search-backward
 
-alias kklt="cd /home/kklt/kklt"
+alias kklt="cd /home/kklt"
+alias yard="cd /home/kklt/yardstick"
+alias stick="cd /home/opnfv/repos/yardstick"
